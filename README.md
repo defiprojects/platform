@@ -33,13 +33,18 @@ Check [Snowflakes API docs](https://snowflakes.network/api). We have three publi
   - [ ] Alpha Finance
   - [ ] Colony
 - [x] Reach out to This week in Avalanche for a collaberation
-- [ ] Add Telegram push notifications
-- [ ] Add Web push notifications
-- [ ] Add Discord Bot for notifications
-- [ ] Add schedule push
-- [ ] Make the code DRY 
+- [ ] Add Telegram push notifications (February 3)
+- [ ] Add Web push notifications (February 4)
+- [ ] Add Discord Bot for notifications (February 5)
+- [ ] Add schedule push (February 6)
+- [ ] Make it possible to edit/delete your own notifications (February 6)
+- [ ] Give snowflakes admin acount possibility to push notifications of not verified domains, needed to kickstart snowflakes.network and give demos (February 7)
+- [ ] Write notifications for the the most popular projects (february 7)
+- [ ] Add missing contract -> domain set with easy admin ability to remove them (example is wavax.net) (February 7)
+- [ ] Make the code DRY (February 7)
+- [ ] Ask for feedback round  
 - [x] Protect /api/push endpoint by domain check
-  - [ ] Create job to check verified domains and update authorization
+  - [ ] Create cron job to check verified domains and update authorization
 - [ ] Proper API docs how they can easily test it themselves (CURL)
 - [ ] New Homepage 
   - [ ] Less text, make it easier and shorter (more graphics)
