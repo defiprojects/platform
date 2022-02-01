@@ -14,32 +14,16 @@
 		<link rel="shortcut icon" href="/favicon-32x32.png" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="/moralis.js"></script>
+		<script src="/snowflakes.min.js"></script>
 		<script>
-			if (
-				!~window.location.pathname.indexOf('/optin') &&
-				~['localhost', 'snowflakes.network'].indexOf(window.location.hostname)
-			) {
-				var scriptMoralis = document.createElement('script');
-				scriptMoralis.onreadystatechange = function () {
-					const serverUrl = 'https://rmirqunkdolb.usemoralis.com:2053/server';
-					const appId = 'B14wbERL2tdI1L59zyduiKZXoJjBMgW1ai9KRghw';
-					Moralis.start({ serverUrl, appId });
-				};
-				scriptMoralis.src = '/moralis.js';
-				document.head.appendChild(scriptMoralis);
-
-				var snowConfig = {
-					color: [161 / 256, 197 / 256, 231 / 256],
-					count: 400,
-					opacity: 0.8,
-					density: 1 / 120,
-					speed: 1 / 25000
-				};
-				var scriptSnowflakes = document.createElement('script');
-				scriptSnowflakes.src = '/snowflakes.min.js'
-				scriptSnowflakes.defer = true;
-				document.head.appendChild(scriptSnowflakes);
-			}
+			var snowConfig = {
+				color: [161 / 256, 197 / 256, 231 / 256],
+				count: 400,
+				opacity: 0.8,
+				density: 1 / 120,
+				speed: 1 / 25000
+			};
 		</script>
 		%svelte.head%
 	</head>
