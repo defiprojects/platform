@@ -46,3 +46,4 @@ Check [Snowflakes API docs](https://snowflakes.network/api). We have three publi
 - [ ] Openwallet connect vs metamask/brave wallet only
 - [ ] WeStaySafe VM subnet integration example
 - [ ] Write Unit/E2E tests, QA flows and JS -> TS when prototype iteration is over
+- [ ] Setup Github Actions CI
