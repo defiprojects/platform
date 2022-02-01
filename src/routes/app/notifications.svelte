@@ -33,7 +33,7 @@
 									<tr>
 										<td class="w-full sm:w-full sm:inline-block">
 											<table class="w-full">
-												{#each Object.keys(notifications).sort((a, b) => (walletPositions[a] || 0 ) < (walletPositions[b] || 0 )) as domain}
+												{#each Object.keys(notifications).sort((a, b) => (walletPositions[a] || 0) < (walletPositions[b] || 0)) as domain}
 													<tr>
 														<td>
 															<div
@@ -49,7 +49,11 @@
 																	>
 																		{domain}</a
 																	>
-																	<span class="text-sky-600 text-sm mt-1 ml-2">{formatUSD(walletPositions[domain])} in wallet</span>
+																	<span
+																		class:hidden={!walletPositions[domain]}
+																		class="text-sky-600 text-sm mt-1 ml-2"
+																		>{formatUSD(walletPositions[domain])} in wallet</span
+																	>
 																</h2>
 																<ul class="m-0 pl-1">
 																	{#each notifications[domain] as notification}
