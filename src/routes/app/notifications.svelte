@@ -1,13 +1,14 @@
 <script>
 	import { onMount } from 'svelte';
 	import { formatUSD } from '$lib/util';
+	import { walletAddress } from '$lib/stores'
 
 	let notifications = {},
 		walletPositions = {},
 		showNoNotifications;
 
 	onMount(async () => {
-		let result = await fetch('/api/notifications-0xaA4055D7Db504f635b5F06182e0e46406318e62C.json');
+		let result = await fetch(`/api/notifications-${walletAddress}.json`);
 		if (result.ok) {
 			const resp = await result.json();
 			notifications = resp.notifications || {};
