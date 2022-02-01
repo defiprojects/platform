@@ -11,6 +11,21 @@ export async function post({ request }) {
 	);
 
 	if (signerAddress.toLowerCase() === push.address.toLowerCase()) {
+		// Check if address is linked to verified domain hash
+		let isAuthorized = await fetch('https://eu1-present-bull-34198.upstash.io', {
+			method: 'POST',
+			body: JSON.stringify(['HGET', `domains:${push.domain}`, push.address.toLowerCase()]),
+			...init
+		});
+
+		isAuthorized = await isAuthorized.json();
+
+		if (!isAuthorized.result)
+			return {
+				status: 401,
+				body: { message: `${push.address} is not authorized to push notifications for ${push.domain}` }
+			};
+
 		const sevenDaysAgoInSeconds = 7 * 24 * 60 * 60;
 		let commands = [['ZADD', `notifications`, 'NX', push.utcSecondsEpoch, signature]];
 
