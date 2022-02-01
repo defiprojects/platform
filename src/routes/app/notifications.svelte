@@ -33,7 +33,7 @@
 									<tr>
 										<td class="w-full sm:w-full sm:inline-block">
 											<table class="w-full">
-												{#each Object.keys(notifications).sort((a, b) => (walletPositions[a] || 0) < (walletPositions[b] || 0)) as domain}
+												{#each Object.keys(notifications).sort((a, b) => (walletPositions[b] || 0) - (walletPositions[a] || 0)) as domain}
 													<tr>
 														<td>
 															<div

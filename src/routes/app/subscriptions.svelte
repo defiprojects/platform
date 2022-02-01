@@ -27,14 +27,15 @@
 		let rawSubscriptions = await Moralis.Cloud.run('getSubscriptions', {
 			address: $walletAddress
 		});
-		rawSubscriptions.positions && rawSubscriptions.positions.reduce((walletPositions, coinPair) => {
-			if (walletPositions[coinPair[0]]) {
-				walletPositions[coinPair[0]] + coinPair[1];
-			} else {
-				walletPositions[coinPair[0]] = coinPair[1];
-			}
-			return walletPositions;
-		}, walletPositions);
+		rawSubscriptions.positions &&
+			rawSubscriptions.positions.reduce((walletPositions, coinPair) => {
+				if (walletPositions[coinPair[0]]) {
+					walletPositions[coinPair[0]] + coinPair[1];
+				} else {
+					walletPositions[coinPair[0]] = coinPair[1];
+				}
+				return walletPositions;
+			}, walletPositions);
 		delete rawSubscriptions.positions;
 		for (const [domain, optinString] of Object.entries(rawSubscriptions)) {
 			subscriptions[domain] = convertOptinString(optinString);
@@ -66,7 +67,7 @@
 	</p>
 	<div class="flex flex-wrap w-full">
 		{#if Object.keys(subscriptions).length}
-			{#each Object.keys(subscriptions).sort((a, b) => (walletPositions[a] || 0) < (walletPositions[b] || 0)) as domain}
+			{#each Object.keys(subscriptions).sort((a, b) => (walletPositions[b] || 0) - (walletPositions[a] || 0)) as domain}
 				<div
 					class="m-2 flex flex-col items-center border-2 border-b-4 border-sky-200 border-b-sky-300 rounded-xl shadow"
 				>
@@ -129,9 +130,7 @@
 				Fetching your subscriptions
 			</p>
 		{:else}
-			<p class="w-full mt-48 mb-60 text-center text-sky-700">
-				You got no subscriptions
-			</p>
+			<p class="w-full mt-48 mb-60 text-center text-sky-700">You got no subscriptions</p>
 		{/if}
 	</div>
 </div>
