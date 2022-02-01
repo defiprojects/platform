@@ -21,21 +21,22 @@ Check [Snowflakes API docs](https://snowflakes.network/api). We have three publi
 ## Todo:
 
 - [ ] Ask major avalanche (defi) platforms for their needs and feedback
-  - [ ] Snowball
+  - [x] Snowball
   - [ ] Trader Joe
   - [ ] Pangolin
   - [ ] Benqi
   - [ ] Penguin Finance
-  - [ ] MagnetDAO
+  - [x] MagnetDAO
   - [ ] Avalaunch
   - [ ] Crabada
   - [ ] Yield Yak
   - [ ] Alpha Finance
   - [ ] Colony
-- [ ] Reach out to This week in Avalanche for a collaberation
+- [x] Reach out to This week in Avalanche for a collaberation
 - [ ] Add Telegram push notifications
 - [ ] Add Web push notifications
 - [ ] Add Discord Bot for notifications
+- [ ] Add schedule push
 - [ ] Make the code DRY 
 - [ ] Protect /api/push endpoint by domain check
 - [ ] Proper API docs how they can easily test it themselves (CURL)
