@@ -38,7 +38,8 @@ Check [Snowflakes API docs](https://snowflakes.network/api). We have three publi
 - [ ] Add Discord Bot for notifications
 - [ ] Add schedule push
 - [ ] Make the code DRY 
-- [ ] Protect /api/push endpoint by domain check
+- [x] Protect /api/push endpoint by domain check
+  - [ ] Create job to check verified domains and update authorization
 - [ ] Proper API docs how they can easily test it themselves (CURL)
 - [ ] New Homepage 
   - [ ] Less text, make it easier and shorter (more graphics)
