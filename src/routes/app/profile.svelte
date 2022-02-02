@@ -150,7 +150,7 @@
 			<div>
 				<h2 class="text-base font-medium text-sky-900">How do you want to be notified?</h2>
 			</div>
-			<ul role="list" class="ml-2 mt-2 divide-y divide-sky-200">
+			<ul class="ml-2 mt-2 divide-y divide-sky-200">
 				<li class="py-2 flex items-center justify-between">
 					<div class="flex flex-col">
 						<p class="text-sm font-medium text-sky-900" id="privacy-option-1-label">

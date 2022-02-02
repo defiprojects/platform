@@ -32,7 +32,7 @@ Check [Snowflakes API docs](https://snowflakes.network/api). We have three publi
   - [ ] Yield Yak
   - [ ] Alpha Finance
   - [ ] Colony
-- [x] Reach out to This week in Avalanche for a collaberation
+- [x] Reach out to This week in Avalanche for a collaberation (Got an answer that it is a pay to promote channel, but wasn't really going for that, will probably go along without a collab, but if I need extra test users or do a launch I can consider it, however getting organic users > paid promotion when finding product market fit)
 - [ ] Add Telegram push notifications
 - [ ] Add Web push notifications
 - [ ] Add Discord Bot for notifications
@@ -45,7 +45,17 @@ Check [Snowflakes API docs](https://snowflakes.network/api). We have three publi
   - [ ] Less text, make it easier and shorter (more graphics)
   - [ ] Add video
   - [ ] Interactive subscription widget which alters the notifications example
-- [ ] Openwallet connect vs metamask/brave wallet only
+- [ ] Add Wallet Connect login option
+- [ ] Add Coinbase wallet login option
+- [ ] Add Rabby login option
+- [ ] Add Coin98 login option
 - [ ] WeStaySafe VM subnet integration example
-- [ ] Write Unit/E2E tests, QA flows and JS -> TS when prototype iteration is over
+- [ ] Write Unit/E2E tests
+- [ ] Add QA flows before release
+- [ ] JS -> TS when prototype iteration is over
+  - [x] Switch to tsconfig/svelte-chceck
+  - [ ] Fix all type warnings if possible
 - [ ] Setup Github Actions CI
+  - [ ] Run type checker
+  - [ ] Run unit tests
+  - [ ] Run E2E tests

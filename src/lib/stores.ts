@@ -3,10 +3,11 @@ import { writable } from 'svelte/store';
 function setWalletAddress() {
 	const { subscribe, set } = writable(0);
 
+	
 	return {
 		subscribe,
 		save: (address) => set(address),
-		reset: () => set('')
+		reset: () => set(0)
 	};
 }
 
@@ -16,7 +17,7 @@ function setUser() {
 	return {
 		subscribe,
 		save: (user) => set(user),
-		reset: () => set('')
+		reset: () => set(0)
 	};
 }
 
