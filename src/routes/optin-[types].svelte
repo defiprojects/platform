@@ -39,9 +39,7 @@
 			address: address
 		};
 
-		const signature = await signer.signMessage(
-			`Save notifications settings: ${JSON.stringify(settings)}`
-		);
+		const signature = await signer.signMessage(`Save notifications settings: ${JSON.stringify(settings)}`);
 		settings.signature = signature;
 
 		const options = {
@@ -78,8 +76,7 @@
 									value={notificationLevel}
 								/>
 								<label
-									on:click={() =>
-										(notificationSetting[notificationType].setting = notificationLevel)}
+									on:click={() => (notificationSetting[notificationType].setting = notificationLevel)}
 									for="notification-level-{notificationType}"
 									class="{notificationLevel} block bg-sky-200 text-sm border-white border-y-2 capitalize flex items-center transition-100"
 									class:active-sub={notificationSetting[notificationType].setting === notificationLevel}

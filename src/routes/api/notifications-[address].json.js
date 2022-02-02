@@ -71,9 +71,7 @@ export async function get({ params }) {
 		.map((notification) => {
 			// Most performant way to parse all notifications
 			return Object.fromEntries(
-				[...Array(Math.ceil(notification.result.length / 2))].map((_) =>
-					notification.result.splice(0, 2)
-				)
+				[...Array(Math.ceil(notification.result.length / 2))].map((_) => notification.result.splice(0, 2))
 			);
 		})
 		.filter((notification) => {

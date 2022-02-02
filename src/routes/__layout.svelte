@@ -12,7 +12,9 @@
 
 		<main class="container relative mx-auto mt-2 z-50">
 			<div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="bg-sky-50 overflow-hidden rounded-2xl border-2 border-b-4 border-sky-200 border-b-sky-300 shadow shadow-sky-300">
+				<div
+					class="bg-sky-50 overflow-hidden rounded-2xl border-2 border-b-4 border-sky-200 border-b-sky-300 shadow shadow-sky-300"
+				>
 					<slot />
 				</div>
 			</div>

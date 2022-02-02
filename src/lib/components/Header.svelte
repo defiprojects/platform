@@ -149,13 +149,7 @@
 									aria-haspopup="true"
 									on:click|preventDefault={login}
 								>
-									<img
-										class="my-1 mr-2"
-										width="30"
-										height="30"
-										src="/metamask.svg"
-										alt="Metamask wallet Login"
-									/>
+									<img class="my-1 mr-2" width="30" height="30" src="/metamask.svg" alt="Metamask wallet Login" />
 									<span>Metamask</span>
 								</button>
 							{:else if $page.url.pathname === '/'}
@@ -191,8 +185,8 @@
 										alt="Chain logo"
 									/>
 									<span
-										>{$walletAddress && $walletAddress.substring(0, 5)}...{$walletAddress &&
-											$walletAddress.slice(-5)} - <b>Log out</b></span
+										>{$walletAddress && $walletAddress.substring(0, 5)}...{$walletAddress && $walletAddress.slice(-5)} -
+										<b>Log out</b></span
 									>
 								</button>
 							{/if}

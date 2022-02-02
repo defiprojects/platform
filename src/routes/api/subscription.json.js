@@ -11,16 +11,19 @@ export async function post({ request }) {
 	);
 
 	if (signerAddress === notficiationSettings.address) {
-		let commands = [[
-			'HSET',
-			`u:${notficiationSettings.address.toLowerCase()}`,
-			`d:${notficiationSettings.domain}`,
-			notficiationSettings.optin
-		]];
+		let commands = [
+			[
+				'HSET',
+				`u:${notficiationSettings.address.toLowerCase()}`,
+				`d:${notficiationSettings.domain}`,
+				notficiationSettings.optin
+			]
+		];
 
-        notficiationSettings.optin.split(/(..)/g).map(optin => {
-            if (optin.length ===2) commands.push(["SADD", `${optin}:${notficiationSettings.domain}`, notficiationSettings.address.toLowerCase()])
-        });
+		notficiationSettings.optin.split(/(..)/g).map((optin) => {
+			if (optin.length === 2)
+				commands.push(['SADD', `${optin}:${notficiationSettings.domain}`, notficiationSettings.address.toLowerCase()]);
+		});
 
 		await fetch('https://eu1-present-bull-34198.upstash.io/pipeline', {
 			method: 'POST',

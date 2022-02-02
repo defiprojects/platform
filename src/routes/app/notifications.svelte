@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { formatUSD } from '$lib/util';
-	import { walletAddress } from '$lib/stores'
+	import { walletAddress } from '$lib/stores';
 
 	let notifications = {},
 		walletPositions = {},
@@ -50,9 +50,7 @@
 																	>
 																		{domain}</a
 																	>
-																	<span
-																		class:hidden={!walletPositions[domain]}
-																		class="text-sky-600 text-sm mt-1 ml-2"
+																	<span class:hidden={!walletPositions[domain]} class="text-sky-600 text-sm mt-1 ml-2"
 																		>{formatUSD(walletPositions[domain])} in wallet</span
 																	>
 																</h2>
@@ -97,9 +95,7 @@
 			</tr>
 		</table>
 	{:else if !showNoNotifications}
-		<p class="animate-pulse mt-32 text-center text-sky-700">
-			Fetching notifications from the last 7 days
-		</p>
+		<p class="animate-pulse mt-32 text-center text-sky-700">Fetching notifications from the last 7 days</p>
 	{:else}
 		<p class="w-full mt-32 mb-32 text-center text-sky-700">You got no notifications</p>
 	{/if}

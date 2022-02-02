@@ -5,11 +5,7 @@
 	import { toast } from '@zerodevx/svelte-toast';
 	import { walletAddress, user } from '$lib/stores';
 	import * as yup from 'yup';
-	import {
-		convertTimestampToUTCMinutes,
-		convertUTCMinutesToTimestamp,
-		urlBase64ToUint8Array
-	} from '$lib/util';
+	import { convertTimestampToUTCMinutes, convertUTCMinutesToTimestamp, urlBase64ToUint8Array } from '$lib/util';
 
 	const applicationServerPublicKey = import.meta.env.VITE_VAPID_PUBLIC_KEY;
 
@@ -119,9 +115,7 @@
 
 		<div class="pl-1 pt-3">
 			<fieldset>
-				<legend class="font-medium text-sky-900"
-					>Which days would you want to receive notifications?</legend
-				>
+				<legend class="font-medium text-sky-900">Which days would you want to receive notifications?</legend>
 				<div class="ml-2 mt-2 border-t border-sky-200 divide-y divide-sky-200">
 					{#each Object.keys(weekdays) as weekday}
 						<div class="relative flex items-start py-2">
@@ -153,9 +147,7 @@
 			<ul class="ml-2 mt-2 divide-y divide-sky-200">
 				<li class="py-2 flex items-center justify-between">
 					<div class="flex flex-col">
-						<p class="text-sm font-medium text-sky-900" id="privacy-option-1-label">
-							Email notifications
-						</p>
+						<p class="text-sm font-medium text-sky-900" id="privacy-option-1-label">Email notifications</p>
 						<p class="text-sm text-sky-700" id="privacy-option-1-description">
 							We send aggregated notifications summary emails at the time you want
 						</p>
@@ -177,9 +169,7 @@
 								</div>
 							</div>
 							<div class="mt-4 ml-2">
-								<label for="mailtime" class="block text-sm font-medium text-sky-700"
-									>Prefered mail time</label
-								>
+								<label for="mailtime" class="block text-sm font-medium text-sky-700">Prefered mail time</label>
 								<div class="mt-1 relative rounded-md shadow-sm">
 									<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
 										<Clock />
@@ -214,9 +204,7 @@
 				</li>
 				<li class="py-4 flex items-center justify-between">
 					<div class="flex flex-col">
-						<p class="text-sm font-medium text-sky-900" id="privacy-option-2-label">
-							Web push notifications
-						</p>
+						<p class="text-sm font-medium text-sky-900" id="privacy-option-2-label">Web push notifications</p>
 						<p class="text-sm text-sky-700" id="privacy-option-2-description">
 							We send an aggregated notifications summary by web push at the time you want
 						</p>
@@ -225,9 +213,7 @@
 				</li>
 				<li class="py-4 flex items-center justify-between">
 					<div class="flex flex-col">
-						<p class="text-sm font-medium text-sky-900" id="privacy-option-3-label">
-							Telegram notifications
-						</p>
+						<p class="text-sm font-medium text-sky-900" id="privacy-option-3-label">Telegram notifications</p>
 						<p class="text-sm text-sky-700" id="privacy-option-3-description">
 							We send aggregated notifications telegram message at the time you want
 						</p>

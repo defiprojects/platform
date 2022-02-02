@@ -138,8 +138,7 @@
 						<div class="inline-flex shadow-sm rounded-md divide-x divide-sky-600">
 							<div class="relative z-0 inline-flex shadow-sm rounded-md divide-x divide-sky-700">
 								<div
-									on:click|preventDefault={() =>
-										(notificationTypeShowMenu = !notificationTypeShowMenu)}
+									on:click|preventDefault={() => (notificationTypeShowMenu = !notificationTypeShowMenu)}
 									class="relative inline-flex items-center bg-sky-500 border-sky-600 border-2 border-b-4 py-2 pl-3 pr-4 rounded-l-md shadow-sm text-white"
 								>
 									<p style="width: 120px" class="ml-2.5 text-sm font-medium">
@@ -148,8 +147,7 @@
 									</p>
 								</div>
 								<button
-									on:click|preventDefault={() =>
-										(notificationTypeShowMenu = !notificationTypeShowMenu)}
+									on:click|preventDefault={() => (notificationTypeShowMenu = !notificationTypeShowMenu)}
 									class="relative inline-flex items-center bg-sky-500 border-sky-600 border-2 border-b-4 p-2 rounded-l-none rounded-r-md overflow-hidden text-sm font-medium text-white"
 									aria-haspopup="listbox"
 									aria-expanded="true"
@@ -247,9 +245,7 @@
 					<div class="px-4 py-3 space-y-3">
 						<div class="grid grid-cols-3 gap-6">
 							<div class="col-span-3 sm:col-span-2">
-								<label for="notification-link" class="block text-sm font-medium text-sky-700">
-									Push link
-								</label>
+								<label for="notification-link" class="block text-sm font-medium text-sky-700"> Push link </label>
 								<div class="mt-1 flex rounded-md shadow-sm">
 									<span
 										class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-sky-300 bg-sky-50 text-sky-500 text-sm"
@@ -269,9 +265,7 @@
 						</div>
 						<div class="grid grid-cols-3 gap-6">
 							<div class="col-span-3 sm:col-span-2">
-								<label for="notification-title" class="block text-sm font-medium text-sky-700">
-									Push title
-								</label>
+								<label for="notification-title" class="block text-sm font-medium text-sky-700"> Push title </label>
 								<div class="mt-1 flex rounded-md shadow-sm">
 									<input
 										bind:value={notificationTitle}
@@ -286,9 +280,7 @@
 						</div>
 
 						<div>
-							<label for="notification-text" class="block text-sm font-medium text-sky-700">
-								Push message
-							</label>
+							<label for="notification-text" class="block text-sm font-medium text-sky-700"> Push message </label>
 							<div class="mt-1">
 								<textarea
 									bind:value={notificationText}
@@ -322,14 +314,10 @@
 																			>
 																				<h6 class="m-0 p-0 font-medium text-base">
 																					{notificationType}
-																					{notificationTitle
-																						? notificationTitle
-																						: 'Notification title'}
+																					{notificationTitle ? notificationTitle : 'Notification title'}
 																				</h6>
 																				<p class="mb-4 ml-1 text-sky-800 hover:text-sky-600">
-																					{notificationText
-																						? notificationText
-																						: 'Notification text'}
+																					{notificationText ? notificationText : 'Notification text'}
 																				</p>
 																			</a>
 																		</li>
@@ -358,12 +346,8 @@
 			</div>
 		</div>
 	{:else if !noVerifiedDomains}
-		<p class="animate-pulse w-full mt-48 mb-60 text-center text-sky-700">
-			Fetching your verifiedDomains
-		</p>
+		<p class="animate-pulse w-full mt-48 mb-60 text-center text-sky-700">Fetching your verifiedDomains</p>
 	{:else}
-		<p class="w-full mt-48 mb-60 text-center text-sky-700">
-			You got no verified domain, please verify a domain first
-		</p>
+		<p class="w-full mt-48 mb-60 text-center text-sky-700">You got no verified domain, please verify a domain first</p>
 	{/if}
 </form>

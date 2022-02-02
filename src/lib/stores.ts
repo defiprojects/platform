@@ -1,23 +1,22 @@
 import { writable } from 'svelte/store';
 
 function setWalletAddress() {
-	const { subscribe, set } = writable(0);
+	const { subscribe, set } = writable('');
 
-	
 	return {
 		subscribe,
-		save: (address) => set(address),
-		reset: () => set(0)
+		save: (address: string) => set(address),
+		reset: () => set('')
 	};
 }
 
 function setUser() {
-	const { subscribe, set } = writable(0);
+	const { subscribe, set } = writable('');
 
 	return {
 		subscribe,
-		save: (user) => set(user),
-		reset: () => set(0)
+		save: (user: string) => set(user),
+		reset: () => set('')
 	};
 }
 

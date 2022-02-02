@@ -5,7 +5,7 @@
 	import { browser } from '$app/env';
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
-	import {user} from '$lib/stores';
+	import { user } from '$lib/stores';
 
 	const toastOptions = {};
 
@@ -55,7 +55,7 @@
 
 <style>
 	:root {
-		--toastBackground: #0EA5E9;
+		--toastBackground: #0ea5e9;
 		--toastColor: #fff;
 		--toastBoxShadow: #075985;
 		--toastBarBackground: #38bdf8;

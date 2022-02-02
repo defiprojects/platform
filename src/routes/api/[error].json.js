@@ -1,9 +1,10 @@
 export async function get({ params }) {
-    const { error } = params;
+	const { error } = params;
 
-    return {
-        body: {
-            "error": `Unknown API route: /${error}`
-        }
-    };
+	return {
+		status: 404,
+		body: {
+			error: `Unknown API route: /${error}`
+		}
+	};
 }

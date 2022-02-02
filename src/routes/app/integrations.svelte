@@ -75,14 +75,10 @@
 <div class="col-span-10">
 	<div>
 		<form action="#" method="POST">
-			<div
-				class="m-4 shadow border-2 border-sky-200 border-b-sky-300 shadow-sky-200 rounded-2xl sm:overflow-hidden"
-			>
+			<div class="m-4 shadow border-2 border-sky-200 border-b-sky-300 shadow-sky-200 rounded-2xl sm:overflow-hidden">
 				<div class="p-6 bg-white space-y-4">
 					<div>
-						<h3 class="text-lg leading-6 font-medium text-sky-800">
-							How to integrate snowflakes to your domain
-						</h3>
+						<h3 class="text-lg leading-6 font-medium text-sky-800">How to integrate snowflakes to your domain</h3>
 						<p class="mt-2 text-sm text-sky-700">
 							1. Add TXT record(s) to your root domain host's DNS records in the following way:
 						</p>
@@ -90,9 +86,7 @@
 						<div class="mt-3 flex flex-col">
 							<div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
 								<div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-									<div
-										class="overflow-hidden border border-sky-200 border-b-sky-300 shadow shadow-sky-200 rounded-lg"
-									>
+									<div class="overflow-hidden border border-sky-200 border-b-sky-300 shadow shadow-sky-200 rounded-lg">
 										<table class="min-w-full divide-y divide-sky-200">
 											<thead class="bg-sky-700">
 												<tr>
@@ -112,9 +106,7 @@
 											</thead>
 											<tbody>
 												<tr class="bg-white">
-													<td
-														class="px-6 py-4 whitespace-nowrap text-sm text-center font-medium text-sky-800"
-													>
+													<td class="px-6 py-4 whitespace-nowrap text-sm text-center font-medium text-sky-800">
 														TXT
 													</td>
 													<td class="px-6 py-4 whitespace-nowrap text-sm text-center text-sky-800">
@@ -124,16 +116,11 @@
 											</tbody>
 											<tbody>
 												<tr class="bg-sky-50">
-													<td
-														class="px-6 py-4 whitespace-nowrap text-sm text-center font-medium text-sky-800"
-													>
+													<td class="px-6 py-4 whitespace-nowrap text-sm text-center font-medium text-sky-800">
 														TXT
 													</td>
 													<td class="px-6 py-4 whitespace-nowrap text-sm text-center text-sky-800">
-														<i
-															>Optional other team member wallet address (add a TXT record per team
-															member)</i
-														>
+														<i>Optional other team member wallet address (add a TXT record per team member)</i>
 													</td>
 												</tr>
 											</tbody>
@@ -151,9 +138,7 @@
 					</p>
 					<div class="grid grid-cols-3 gap-3">
 						<div class="col-span-3 sm:col-span-2">
-							<label for="project-domain" class="block text-sm font-medium text-sky-700">
-								Project domain
-							</label>
+							<label for="project-domain" class="block text-sm font-medium text-sky-700"> Project domain </label>
 							<div class="mt-1 flex rounded-md">
 								<div class="mt-1 md:flex rounded-md">
 									<div class="flex">
@@ -182,9 +167,7 @@
 						</div>
 					</div>
 					<p class="mt-2 text-sm text-sky-700">
-						4. Wait till your TXT records are validated or keep pressing <b
-							>Trigger domain verify
-						</b>
+						4. Wait till your TXT records are validated or keep pressing <b>Trigger domain verify </b>
 						button <br />
 						5. Start sending notifications!
 					</p>
@@ -196,9 +179,7 @@
 			<div class="m-4 flex flex-col">
 				<div class="-my-2 overflow-x-auto">
 					<div class="py-2 align-middle inline-block min-w-full">
-						<div
-							class="overflow-hidden border-2 border-sky-200 border-b-sky-300 shadow shadow-sky-200 rounded-lg"
-						>
+						<div class="overflow-hidden border-2 border-sky-200 border-b-sky-300 shadow shadow-sky-200 rounded-lg">
 							<table class="min-w-full divide-y divide-sky-200">
 								<thead class="bg-sky-700">
 									<tr>
@@ -214,10 +195,7 @@
 										>
 											Status
 										</th>
-										<th
-											scope="col"
-											class="py-3 text-xs font-medium text-sky-50 uppercase tracking-wider"
-										/>
+										<th scope="col" class="py-3 text-xs font-medium text-sky-50 uppercase tracking-wider" />
 									</tr>
 								</thead>
 								<tbody class="bg-white divide-y divide-sky-200">
@@ -269,13 +247,9 @@
 				</div>
 			</div>
 		{:else if !noDomains}
-			<p class="animate-pulse w-full mt-12 mb-12 text-center text-sky-700">
-				Check for domain integrations
-			</p>
+			<p class="animate-pulse w-full mt-12 mb-12 text-center text-sky-700">Check for domain integrations</p>
 		{:else}
-			<p class="w-full mt-12 mb-12 text-center text-sky-700">
-				You have added no domains
-			</p>
+			<p class="w-full mt-12 mb-12 text-center text-sky-700">You have added no domains</p>
 		{/if}
 	</div>
 </div>

@@ -91,12 +91,8 @@
 			</div>
 		{/each}
 	{:else if !noDomainsAnalytics}
-		<p class="animate-pulse w-full mt-12 mb-12 text-center text-sky-700">
-			Fetching your premium domain analytics
-		</p>
+		<p class="animate-pulse w-full mt-12 mb-12 text-center text-sky-700">Fetching your premium domain analytics</p>
 	{:else}
-		<p class="w-full mt-12 mb-12 text-center text-sky-700">
-			You got no premium domain analytics
-		</p>
+		<p class="w-full mt-12 mb-12 text-center text-sky-700">You got no premium domain analytics</p>
 	{/if}
 </div>

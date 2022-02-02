@@ -3,10 +3,7 @@ const init = { headers: { Authorization: `Bearer ${import.meta.env.VITE_SECRET_U
 
 export async function post({ request }) {
 	// Only authorized calls to prevent spamming
-	if (
-		request.headers.get('Authorization') !==
-		`Bearer ${import.meta.env.VITE_SECRET_SNOWFLAKES_BEARER_TOKEN}`
-	) {
+	if (request.headers.get('Authorization') !== `Bearer ${import.meta.env.VITE_SECRET_SNOWFLAKES_BEARER_TOKEN}`) {
 		return {
 			body: {
 				status: 'forbidden'
@@ -54,8 +51,7 @@ export async function post({ request }) {
 	notifications = await notifications.json();
 
 	// No notifications, return empty array
-	if (!notifications.result.length)
-		return { body: { status: 'Mail job done, no email needed to be sent' } };
+	if (!notifications.result.length) return { body: { status: 'Mail job done, no email needed to be sent' } };
 
 	let commands = [];
 	notifications.result.map((pushSignature) => {
@@ -72,9 +68,7 @@ export async function post({ request }) {
 	notifications = notifications.map((notification) => {
 		// Most performant way to parse all notifications
 		return Object.fromEntries(
-			[...Array(Math.ceil(notification.result.length / 2))].map((_) =>
-				notification.result.splice(0, 2)
-			)
+			[...Array(Math.ceil(notification.result.length / 2))].map((_) => notification.result.splice(0, 2))
 		);
 	});
 
@@ -137,12 +131,12 @@ export async function post({ request }) {
 		}
 	});
 
-    let adminEmail = `${import.meta.env.VITE_SECRET_ADMIN_EMAIL}`
-    await sendEmail(adminEmail, mailReceivers.result, 'd-13aab6800853418885e2286a37fdc10a')
+	let adminEmail = `${import.meta.env.VITE_SECRET_ADMIN_EMAIL}`;
+	await sendEmail(adminEmail, mailReceivers.result, 'd-13aab6800853418885e2286a37fdc10a');
 
 	return {
 		body: {
-			status: "Mail job done"
+			status: 'Mail job done'
 		}
 	};
 }

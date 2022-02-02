@@ -4,13 +4,13 @@ Advanced notification opt-in system running completely serverless (Moralis/Cloud
 
 ## Design philosophy
 
-Create a serverless subscribe/push system that works on every chain (that Covalent en Moralis support) and subnet (pull block cron strategy). This project can evolve in two or three ways, becoming a deploy your own subscribe/push system and/or managed subscribe/push system with garantuees that only domain authorised people can send push notifications. 
+Create a serverless subscribe/push system that works on every chain (that Covalent en Moralis support) and subnet (pull block cron strategy). This project can evolve in two or three ways, becoming a deploy your own subscribe/push system and/or managed subscribe/push system with garantuees that only domain authorised people can send push notifications.
 
-### Scalability 
+### Scalability
 
-Sveltekit Cloudflare Pages with functions will work fine for the start (less than 143k subscribers). After that hoping that the Cloudflare team will have their functions improved or we need to switch to unbound Cloudflare workers. 
+Sveltekit Cloudflare Pages with functions will work fine for the start (less than 143k subscribers). After that hoping that the Cloudflare team will have their functions improved or we need to switch to unbound Cloudflare workers.
 
-### API 
+### API
 
 Check [Snowflakes API docs](https://snowflakes.network/api). We have three public endpoints:
 
@@ -43,11 +43,11 @@ Check [Snowflakes API docs](https://snowflakes.network/api). We have three publi
 - [ ] Write notifications for the the most popular projects (february 7)
 - [ ] Add missing contract -> domain set with easy admin ability to remove them (example is wavax.net) (February 7)
 - [ ] Make the code DRY (February 7)
-- [ ] Ask for feedback round  
+- [ ] Ask for feedback round
 - [x] Protect /api/push endpoint by domain check
   - [ ] Create cron job to check verified domains and update authorization
 - [ ] Proper API docs how they can easily test it themselves (CURL)
-- [ ] New Homepage 
+- [ ] New Homepage
   - [ ] Less text, make it easier and shorter (more graphics)
   - [ ] Add video
   - [ ] Interactive subscription widget which alters the notifications example

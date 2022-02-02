@@ -5,12 +5,7 @@
 <footer>
 	<div class="max-w-7xl mx-auto pb-4 px-4 overflow-hidden sm:px-6 lg:px-8">
 		<div class="mt-8 flex justify-center space-x-6">
-			<a
-				target="_blank"
-				rel="external"
-				href="https://twitter.com/CharifMews"
-				class="text-sky-50 hover:text-sky-100"
-			>
+			<a target="_blank" rel="external" href="https://twitter.com/CharifMews" class="text-sky-50 hover:text-sky-100">
 				<span class="sr-only">Twitter</span>
 				<Twitter />
 			</a>

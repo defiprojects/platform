@@ -5,7 +5,7 @@ function getTimezoneOffset() {
 	return date.getTimezoneOffset();
 }
 
-function convertTimestampToUTCMinutes(timestamp) {
+function convertTimestampToUTCMinutes(timestamp: string) {
 	const minutesOffset = getTimezoneOffset();
 	const hours = timestamp.split(':')[0];
 	const minutes = timestamp.split(':')[1];
@@ -13,19 +13,17 @@ function convertTimestampToUTCMinutes(timestamp) {
 	return minutesDay >= 0 ? minutesDay : 1440 + minutesDay;
 }
 
-function convertUTCMinutesToTimestamp(minutesTotal) {
-    if (!minutesTotal) return "19:30"
+function convertUTCMinutesToTimestamp(minutesTotal: number) {
+	if (!minutesTotal) return '19:30';
 	const minutesOffset = getTimezoneOffset();
 	let minutesDay = minutesTotal - minutesOffset;
 	minutesDay = minutesDay >= 0 ? minutesDay : 1440 + minutesDay;
 	const hours = `${Math.floor(minutesDay / 60)}`;
 	const minutes = `${minutesDay % 60}`;
-	return `${hours.length == 2 ? hours : '0' + hours}:${
-		minutes.length == 2 ? minutes : '0' + minutes
-	}`;
+	return `${hours.length == 2 ? hours : '0' + hours}:${minutes.length == 2 ? minutes : '0' + minutes}`;
 }
 
-function urlBase64ToUint8Array(base64String) {
+function urlBase64ToUint8Array(base64String: string) {
 	var padding = '='.repeat((4 - (base64String.length % 4)) % 4);
 	var base64 = (base64String + padding).replace(/\-/g, '+').replace(/_/g, '/');
 
@@ -38,10 +36,8 @@ function urlBase64ToUint8Array(base64String) {
 	return outputArray;
 }
 
-function formatUSD(amount) {
-	return amount
-		? `$${new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 2 }).format(amount)}`
-		: '';
+function formatUSD(amount: number) {
+	return amount ? `$${new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 2 }).format(amount)}` : '';
 }
 
 export { formatUSD, convertTimestampToUTCMinutes, convertUTCMinutesToTimestamp, urlBase64ToUint8Array };

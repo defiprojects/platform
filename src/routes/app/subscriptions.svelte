@@ -57,13 +57,11 @@
 	}
 </script>
 
-<div
-	class="col-span-10 m-4 p-6 bg-white border-2 border-sky-200 border-b-sky-400 shadow shadow-sky-200 rounded-2xl"
->
+<div class="col-span-10 m-4 p-6 bg-white border-2 border-sky-200 border-b-sky-400 shadow shadow-sky-200 rounded-2xl">
 	<h1 class="text-3xl font-bold text-sky-900 mb-2">Subscriptions</h1>
 	<p class="ml-1 text-sky-900">
-		Decide which type of notifications you want to receive instantly, decline or bundle in a nice
-		overview you receive on they days you selected in your notification profile.
+		Decide which type of notifications you want to receive instantly, decline or bundle in a nice overview you receive
+		on they days you selected in your notification profile.
 	</p>
 	<div class="flex flex-wrap w-full">
 		{#if Object.keys(subscriptions).length}
@@ -100,12 +98,10 @@
 													value={notificationLevel}
 												/>
 												<label
-													on:click={() =>
-														updateNotificationLevel(domain, notificationType, notificationLevel)}
+													on:click={() => updateNotificationLevel(domain, notificationType, notificationLevel)}
 													for="{domain}-notification-level-{notificationType}"
 													class="{notificationLevel} flex items-center bg-sky-200 text-sm border-white border-y-2 capitalize"
-													class:active-sub={subscriptions[domain][notificationType] ===
-														notificationLevel}
+													class:active-sub={subscriptions[domain][notificationType] === notificationLevel}
 												>
 													{#if notificationLevel === 'bundle'}
 														<Bundle />
@@ -126,9 +122,7 @@
 				</div>
 			{/each}
 		{:else if !showNoSubscriptions}
-			<p class="animate-pulse w-full mt-48 mb-60 text-center text-sky-700">
-				Fetching your subscriptions
-			</p>
+			<p class="animate-pulse w-full mt-48 mb-60 text-center text-sky-700">Fetching your subscriptions</p>
 		{:else}
 			<p class="w-full mt-48 mb-60 text-center text-sky-700">You got no subscriptions</p>
 		{/if}

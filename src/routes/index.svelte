@@ -12,32 +12,27 @@
 				Snowflakes.network
 			</h2>
 			<p class="mt-4 max-w-3xl mx-auto text-xl text-sky-800">
-				Signing up for notifications are <b>broken</b> for almost every website. You receive them
-				when you don't want them, you get spammed by too many notifications and won't notice the
-				important notifications. Unsubscribing is way too hard for most people.
+				Signing up for notifications are <b>broken</b> for almost every website. You receive them when you don't want
+				them, you get spammed by too many notifications and won't notice the important notifications. Unsubscribing is
+				way too hard for most people.
 				<br /><br /> It's time for a
-				<b>better opt-in notification system!</b> Your crypto positions decide the order of your notifications.  
+				<b>better opt-in notification system!</b> Your crypto positions decide the order of your notifications.
 			</p>
 		</div>
 
 		<div class="relative mt-4 lg:mt-8 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
 			<div class="relative">
-				<h3 class="text-2xl font-extrabold text-sky-600 tracking-tight sm:text-3xl">
-					Web3 Notifications
-				</h3>
+				<h3 class="text-2xl font-extrabold text-sky-600 tracking-tight sm:text-3xl">Web3 Notifications</h3>
 				<p class="mt-3 text-lg text-sky-800">
-					Web3 communities are popping up and growing at an incredible rate. From building new
-					decentralised finance platforms to participating massive in-game on chain economies,
-					the Web3 cycle will challenge the old established way. We challenge the old Web2
-					notifications!
+					Web3 communities are popping up and growing at an incredible rate. From building new decentralised finance
+					platforms to participating massive in-game on chain economies, the Web3 cycle will challenge the old
+					established way. We challenge the old Web2 notifications!
 				</p>
 
 				<dl class="mt-10 space-y-10">
 					<div class="relative">
 						<dt>
-							<div
-								class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white"
-							>
+							<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
 								<!-- Heroicon name: outline/globe-alt -->
 								<svg
 									class="h-6 w-6"
@@ -55,23 +50,19 @@
 									/>
 								</svg>
 							</div>
-							<p class="ml-16 text-lg leading-6 font-medium text-sky-600">
-								You are in full control
-							</p>
+							<p class="ml-16 text-lg leading-6 font-medium text-sky-600">You are in full control</p>
 						</dt>
 						<dd class="mt-2 ml-16 text-base text-sky-800">
-							You decide at which time of the day you want to receive notifications and which
-							notifications need you immediate attention. We classify notifications with the
-							following labels:<br><br>
-							<b>🚨 security</b> <br> <b>👤 personal</b> <br> <b>🚀 Launch</b> <br> <b>👤 Vote</b> <br> <b>🗳 general</b>
+							You decide at which time of the day you want to receive notifications and which notifications need you
+							immediate attention. We classify notifications with the following labels:<br /><br />
+							<b>🚨 security</b> <br /> <b>👤 personal</b> <br /> <b>🚀 Launch</b> <br />
+							<b>👤 Vote</b> <br /> <b>🗳 general</b>
 						</dd>
 					</div>
 
 					<div class="relative">
 						<dt>
-							<div
-								class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white"
-							>
+							<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
 								<!-- Heroicon name: outline/scale -->
 								<svg
 									class="h-6 w-6"
@@ -89,21 +80,17 @@
 									/>
 								</svg>
 							</div>
-							<p class="ml-16 text-lg leading-6 font-medium text-sky-600">
-								Protect your attention span
-							</p>
+							<p class="ml-16 text-lg leading-6 font-medium text-sky-600">Protect your attention span</p>
 						</dt>
 						<dd class="mt-2 ml-16 text-base text-sky-800">
-							The biggest danger for your attention span are constant notifications. We protect your
-							attention span and advice how to handle notifications in a sane way.
+							The biggest danger for your attention span are constant notifications. We protect your attention span and
+							advice how to handle notifications in a sane way.
 						</dd>
 					</div>
 
 					<div class="relative">
 						<dt>
-							<div
-								class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white"
-							>
+							<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
 								<!-- Heroicon name: outline/lightning-bolt -->
 								<svg
 									class="h-6 w-6"
@@ -121,13 +108,11 @@
 									/>
 								</svg>
 							</div>
-							<p class="ml-16 text-lg leading-6 font-medium text-sky-600">
-								Only community members get notifications
-							</p>
+							<p class="ml-16 text-lg leading-6 font-medium text-sky-600">Only community members get notifications</p>
 						</dt>
 						<dd class="mt-2 ml-16 text-base text-sky-800">
-							People join and leave communities and our solution automatically ensures people don't
-							get notifications anymore if they leave your community
+							People join and leave communities and our solution automatically ensures people don't get notifications
+							anymore if they leave your community
 						</dd>
 					</div>
 				</dl>
@@ -150,16 +135,14 @@
 						Decide your notification channels
 					</h3>
 					<p class="mt-3 text-lg text-sky-800">
-						Some prefer mail notifications, others telegram messages, however you are in control how
-						you will receive the notifications. Like we said, you are in full control!
+						Some prefer mail notifications, others telegram messages, however you are in control how you will receive
+						the notifications. Like we said, you are in full control!
 					</p>
 
 					<dl class="mt-10 space-y-10">
 						<div class="relative">
 							<dt>
-								<div
-									class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white"
-								>
+								<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
 									<!-- Heroicon name: outline/annotation -->
 									<svg
 										class="h-6 w-6"
@@ -177,22 +160,17 @@
 										/>
 									</svg>
 								</div>
-								<p class="ml-16 text-lg leading-6 font-medium text-sky-600">
-									Web push notification 3.0
-								</p>
+								<p class="ml-16 text-lg leading-6 font-medium text-sky-600">Web push notification 3.0</p>
 							</dt>
 							<dd class="mt-2 ml-16 text-base text-sky-800">
-								Web push notifications are easy to subscribe to, but complicated to unsubscribe
-								unfortunately. We fix this in an easy way where you can unsubscribe without going
-								into your browser settings.
+								Web push notifications are easy to subscribe to, but complicated to unsubscribe unfortunately. We fix
+								this in an easy way where you can unsubscribe without going into your browser settings.
 							</dd>
 						</div>
 
 						<div class="relative">
 							<dt>
-								<div
-									class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white"
-								>
+								<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
 									<!-- Heroicon name: outline/mail -->
 									<svg
 										class="h-6 w-6"
@@ -210,21 +188,17 @@
 										/>
 									</svg>
 								</div>
-								<p class="ml-16 text-lg leading-6 font-medium text-sky-600">
-									Notification/Summary emails
-								</p>
+								<p class="ml-16 text-lg leading-6 font-medium text-sky-600">Notification/Summary emails</p>
 							</dt>
 							<dd class="mt-2 ml-16 text-base text-sky-800">
-								Too many general notifications are no problem for us. We summarize the
-								notifications and send them by mail so you keep your oversight and attention span.
+								Too many general notifications are no problem for us. We summarize the notifications and send them by
+								mail so you keep your oversight and attention span.
 							</dd>
 						</div>
 
 						<div class="relative">
 							<dt>
-								<div
-									class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white"
-								>
+								<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										class="h-6 w-6"
@@ -240,13 +214,10 @@
 										/>
 									</svg>
 								</div>
-								<p class="ml-16 text-lg leading-6 font-medium text-sky-600">
-									Telegram notification messages
-								</p>
+								<p class="ml-16 text-lg leading-6 font-medium text-sky-600">Telegram notification messages</p>
 							</dt>
 							<dd class="mt-2 ml-16 text-base text-sky-800">
-								You hate web push and mail notifications, no problem. We send Telegram
-								notification messages as well!
+								You hate web push and mail notifications, no problem. We send Telegram notification messages as well!
 							</dd>
 						</div>
 					</dl>
