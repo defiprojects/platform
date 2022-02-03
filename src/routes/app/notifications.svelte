@@ -8,7 +8,7 @@
 		showNoNotifications;
 
 	onMount(async () => {
-		let result = await fetch(`/api/notifications-${walletAddress}.json`);
+		let result = await fetch(`/api/notifications-${$walletAddress}.json`);
 		if (result.ok) {
 			const resp = await result.json();
 			notifications = resp.notifications || {};
