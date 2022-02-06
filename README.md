@@ -35,16 +35,16 @@ Check [Snowflakes API docs](https://snowflakes.network/api). We have three publi
 - [x] Reach out to This week in Avalanche for a collaberation (Got an answer that it is a pay to promote channel, but wasn't really going for that, will probably go along without a collab, but if I need extra test users or do a launch I can consider it, however getting organic users > paid promotion when finding product market fit)
 - [x] Reach out to This week in Avalanche for a collaberation
 - [x] Add Telegram push notifications (bot is @snowflakes_network_bot)
-  - [x] Keep hitting 429 while testing bulk push notifications https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this          https://core.telegram.org/bots/faq#how-can-i-message-all-of-my-bot-39s-subscribers-at-once Basically this limits it to 30 subscribers a second, with 5 minute time frames we have like 5 * 60 * 30 = 9000 push messages limit and in the best case spread over the whole day 259200 push notifications, but in reality a lot less. There are some approaches to handle this in a different way (like creating more bots and spreading users over new bots, but feels complicated and not sure how it works when they change the time and certain blocks are already booked). Feels quite complicated to solve in comparison with mail or web push (maybe make it a premium feature?). Wait with web push implementation and discord bot before commiting. 
-- [ ] Add Web push notifications (February 4)
-- [ ] Add Discord Bot for notifications (February 5)
-- [ ] Refactor mail.json.js cron endpoint to [channel].json.ts endpoint
-- [ ] Add schedule push (February 6)
-- [ ] Make it possible to edit/delete your own notifications (February 6)
-- [ ] Give snowflakes admin acount possibility to push notifications of not verified domains, needed to kickstart snowflakes.network and give demos (February 7)
-- [ ] Write notifications for the the most popular projects (february 7)
-- [ ] Add missing contract -> domain set with easy admin ability to remove them (example is wavax.net) (February 7)
-- [ ] Make the code DRY (February 7)
+  - [x] Keep hitting 429 while testing bulk push notifications https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this          https://core.telegram.org/bots/faq#how-can-i-message-all-of-my-bot-39s-subscribers-at-once Basically this limits it to 30 subscribers a second, with 5 minute time frames we have like 5 * 60 * 30 = 9000 push messages limit and in the best case spread over the whole day 259200 push notifications, but in reality a lot less. There are some approaches to handle this in a different way (like creating more bots and spreading users over new bots, but feels complicated and not sure how it works when they change the time and certain blocks are already booked). Feels quite complicated to solve in comparison with mail or web push (maybe make it a premium feature?). Wait with web push implementation and discord bot before commiting. Update: change to https://github.com/snowflakes-network/shove
+- [ ] Change push endpoint to https://github.com/snowflakes-network/shove
+  - [ ] Setup on fly.io
+  - [ ] Check Redis storage approach between shove an snowflakes platform
+- [ ] Add Discord Bot for notifications
+- [ ] Add schedule push
+- [ ] Make it possible to edit/delete your own notifications
+- [ ] Give snowflakes admin acount possibility to push notifications of not verified domains, needed to kickstart snowflakes.network and give demos
+- [x] Write notifications for the the most popular projects (february 7)
+- [x] Add missing contract -> domain set with easy admin ability to remove them (example is wavax.net) (February 7)
 - [ ] Ask for feedback round
 - [x] Protect /api/push endpoint by domain check
   - [ ] Create cron job to check verified domains and update authorization
