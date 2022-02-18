@@ -6,7 +6,8 @@ export async function get({ params }) {
 	const now = new Date();
 	const utcMilllisecondsSinceEpoch = now.getTime() + now.getTimezoneOffset() * 60 * 1000;
 	const utcSecondsSinceEpoch = Math.round(utcMilllisecondsSinceEpoch / 1000);
-	const utcSecondsSinceEpoch7DaysAgo = utcSecondsSinceEpoch - 7 * 60 * 60 * 24;
+	// TODO: revert this back before the demo on monday
+	const utcSecondsSinceEpoch7DaysAgo = utcSecondsSinceEpoch - 37 * 60 * 60 * 24;
 
 	let subscriptions = await fetch('https://eu1-present-bull-34198.upstash.io/', {
 		method: 'POST',
