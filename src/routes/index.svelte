@@ -55,8 +55,8 @@
 						<dd class="mt-2 ml-16 text-base text-sky-800">
 							You decide at which time of the day you want to receive notifications and which notifications need you
 							immediate attention. We classify notifications with the following labels:<br /><br />
-							<b>🚨 security</b> <br /> <b>👤 personal</b> <br /> <b>🚀 Launch</b> <br />
-							<b>👤 Vote</b> <br /> <b>🗳 general</b>
+							<b>🚨 Security</b> <br /> <b>👤 Personal</b> <br /> <b>🚀 Launch</b> <br />
+							<b>👤 Vote</b> <br /> <b>🗳 General</b>
 						</dd>
 					</div>
 

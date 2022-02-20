@@ -86,8 +86,8 @@
 							</td>
 						</tr>
 						<tr class="text-sky-800 text-sm text-center">
-							<b>🚨 security</b> <b class="mx-3">🚀 Launch</b> <b>🗳️ Vote</b>
-							<b class="mx-3">👤 personal</b> <b>📢 general</b>
+							<b>🚨 Security</b> <b class="mx-3">🚀 Launch</b> <b>🗳️ Vote</b>
+							<b class="mx-3">👤 Personal</b> <b>📢 General</b>
 						</tr>
 						<br />
 					</table>
