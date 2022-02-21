@@ -58,7 +58,7 @@
 																	{#each notifications[domain] as notification}
 																		<li class="flex">
 																			<a
-																				href={notification.link}
+																				href={notification.link.startsWith("https://") ? notification.link : `https://${notification.link}`}
 																				class="text-sky-700 hover:text-sky-500 no-underline transition-colors duration-300"
 																			>
 																				<h6 class="m-0 p-0 font-medium text-base">
